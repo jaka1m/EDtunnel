@@ -709,19 +709,19 @@ function getวเลสConfig(userIDs, hostName) {
 	const output = userIDArray.map((userID) => {
 		const วเลสMain = atob(pt) + '://' + userID + atob(at) + hostName + commonUrlPart;
 		const วเลสSec = atob(pt) + '://' + userID + atob(at) + พร็อกซีไอพี + commonUrlPart;
-		return `<h2>UUID: ${userID}</h2>${hashSeparator}</br>\n<b><green>🇮🇩 V2RAY DEFAULT IP 🇮🇩</green></b>
---------------------------
+		return `<h2>UUID: ${userID}</h2>${hashSeparator}\nv2ray default ip
+---------------------------------------------------------------
 ${วเลสMain}
-<button onclick='copyToClipboard("${วเลสMain}")'><i class="fa fa-clipboard"></i> Copy Vless Default IP</button>
---------------------------
-<b><green>🇮🇩 V2RAY WITH BEST IP 🇮🇩</green></b>
---------------------------
+<button onclick='copyToClipboard("${วเลสMain}")'><i class="fa fa-clipboard"></i> Copy วเลสMain</button>
+---------------------------------------------------------------
+v2ray with bestip
+---------------------------------------------------------------
 ${วเลสSec}
-<button onclick='copyToClipboard("${วเลสSec}")'><i class="fa fa-clipboard"></i> Copy Vless Best IP</button>
---------------------------`;
+<button onclick='copyToClipboard("${วเลสSec}")'><i class="fa fa-clipboard"></i> Copy วเลสSec</button>
+---------------------------------------------------------------`;
 	}).join('\n');
-	const sublink = `https://${hostName}/sub/geo?format=clash`
-	const subbestip = `https://${hostName}/bestip/geo`;
+	const sublink = `https://${hostName}/sub/${userIDArray[0]}?format=clash`
+	const subbestip = `https://${hostName}/bestip/${userIDArray[0]}`;
 	const clash_link = `https://api.v1.mk/sub?target=clash&url=${encodeURIComponent(sublink)}&insert=false&emoji=true&list=false&tfo=false&scv=true&fdn=false&sort=false&new_name=true`;
 	// Prepare header string
 	const header = `
@@ -734,9 +734,6 @@ const header = `
  </div>
 </b>
 
-<p align='center'><img src='https://github.com/jaka1m/project/assets/61670480/f63244a8-1b7a-4442-aef7-2dba36b79404' alt='SCRIPT' style='margin-bottom: -15px;'>
-<p align='center'><img src='https://github.com/jaka1m/project/assets/61670480/b34667e7-1752-43be-98cf-401f86d5887c' alt='BAYAR' style='margin-bottom: -15px;'>
-
 <a href='//${hostName}/sub/' target='_blank'>วเลส 节点订阅连接</a>
 <a href='clash://install-config?url=${encodeURIComponent(`https://${hostName}/sub/geo?format=clash`)}}' target='_blank'>Clash for Windows 节点订阅连接</a>
 <a href='${clash_link}' target='_blank'>Clash </a>
@@ -744,7 +741,7 @@ const header = `
 <a href='clash://install-config?url=${encodeURIComponent(subbestip)}' target='_blank'>Clash IP</a>
 <a href='sing-box://import-remote-profile?url=${encodeURIComponent(subbestip)}' target='_blank'>singbox IP</a>
 <a href='sn://subscription?url=${encodeURIComponent(subbestip)}' target='_blank'>nekobox IP</a>
-<a href='v2rayng://install-config?url=${encodeURIComponent(subbestip)}' target='_blank'>v2rayNG IP</a></p>`;
+<a href='v2rayng://install-config?url=${encodeURIComponent(subbestip)}' target='_blank'>v2rayNG IP自动</a></p>`;
 
 	// HTML Head with CSS and FontAwesome library
 	const htmlHead = `
