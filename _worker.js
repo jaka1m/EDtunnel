@@ -725,10 +725,8 @@ ${วเลสSec}
 	const clash_link = `https://api.v1.mk/sub?target=clash&url=${encodeURIComponent(sublink)}&insert=false&emoji=true&list=false&tfo=false&scv=true&fdn=false&sort=false&new_name=true`;
 	// Prepare header string
 	const header = `
-<a href='https://github.com/3Kmfi6HP/EDtunnel' target='_blank'>EDtunnel - https://github.com/3Kmfi6HP/EDtunnel</a>
-//<iframe src='https://ghbtns.com/github-btn.html?user=USERNAME&repo=REPOSITORY&type=star&count=true&size=large' frameborder='0' scrolling='0' width='170' height='30' title='GitHub'></iframe>
-<a href='//${hostName}/sub/${userIDArray[0]}' target='_blank'>วเลส 节点订阅连接</a>
-<a href='clash://install-config?url=${encodeURIComponent(`https://${hostName}/sub/${userIDArray[0]}?format=clash`)}}' target='_blank'>Clash for Windows 节点订阅连接</a>
+<a href='//${hostName}/sub/geo' target='_blank'>ANU</a>
+<a href='clash://install-config?url=${encodeURIComponent(`https://${hostName}/sub/geo?format=clash`)}}' target='_blank'>Clash for Windows </a>
 <a href='${clash_link}' target='_blank'>Clash 节点订阅连接</a>
 <a href='${subbestip}' target='_blank'>优选IP自动节点订阅</a>
 <a href='clash://install-config?url=${encodeURIComponent(subbestip)}' target='_blank'>Clash优选IP自动</a>
