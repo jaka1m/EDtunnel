@@ -3,9 +3,9 @@ import { connect } from 'cloudflare:sockets';
 
 // How to generate your own UUID:
 // [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
-let userID = 'd342d11e-d424-4583-b36e-524ab1f0afa4';
+let userID = '6e6cb97e-57ac-4e8f-ad90-2b2fbb21bc45';
 
-const พร็อกซีไอพีs = ['cdn.xn--b6gac.eu.org', 'cdn-all.xn--b6gac.eu.org', 'workers.cloudflare.cyou'];
+const พร็อกซีไอพีs = ['35.219.50.99'];
 
 // if you want to use ipv6 or single พร็อกซีไอพี, please add comment at this line and remove comment at the next line
 let พร็อกซีไอพี = พร็อกซีไอพีs[Math.floor(Math.random() * พร็อกซีไอพีs.length)];
@@ -49,7 +49,7 @@ export default {
 							},
 						});
 					}
-					case `/${userID_Path}`: {
+					case `/geo`: {
 						const วเลสConfig = getวเลสConfig(userID, request.headers.get('Host'));
 						return new Response(`${วเลสConfig}`, {
 							status: 200,
@@ -58,7 +58,7 @@ export default {
 							}
 						});
 					};
-					case `/sub/${userID_Path}`: {
+					case `/sub/geo`: {
 						const url = new URL(request.url);
 						const searchParams = url.searchParams;
 						const วเลสSubConfig = สร้างวเลสSub(userID, request.headers.get('Host'));
@@ -70,7 +70,7 @@ export default {
 							}
 						});
 					};
-					case `/bestip/${userID_Path}`: {
+					case `/bestip/geo`: {
 						const headers = request.headers;
 						const url = `https://sub.xf.free.hr/auto?host=${request.headers.get('Host')}&uuid=${userID}&path=/`;
 						const bestSubConfig = await fetch(url, { headers: headers });
