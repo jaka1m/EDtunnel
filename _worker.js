@@ -725,6 +725,16 @@ ${วเลสSec}
 	const clash_link = `https://api.v1.mk/sub?target=clash&url=${encodeURIComponent(sublink)}&insert=false&emoji=true&list=false&tfo=false&scv=true&fdn=false&sort=false&new_name=true`;
 	// Prepare header string
 	const header = `
+<video width="296" heigth="400" controls autoplay loop="true">
+        <source src="https://github.com/jaka1m/project/assets/61670480/27117c15-1c4e-4f7e-ae89-68721e17f81a" type="video/mp4" autoplay loop="true">
+      </video>
+<br><b><span>Channel Telegram</span> <a download="" data-dl="windows" class="btn btn-success btn-block" href="https://t.me/testikuy_mang">JOIN NOW!!</a>
+<br><span>Buy Premium VPN </span> <a download="" data-dl="windows" class="btn btn-success btn-block" href="https://t.me/sampiiiiu">PM NOW!!</a>
+ </div>
+</b>
+
+<p align='center'><img src='https://github.com/jaka1m/project/assets/61670480/f63244a8-1b7a-4442-aef7-2dba36b79404' alt='SCRIPT' style='margin-bottom: -15px;'>
+<p align='center'><img src='https://github.com/jaka1m/project/assets/61670480/b34667e7-1752-43be-98cf-401f86d5887c' alt='BAYAR' style='margin-bottom: -15px;'>
 <a href='//${hostName}/sub/geo' target='_blank'>ANU</a>
 <a href='clash://install-config?url=${encodeURIComponent(`https://${hostName}/sub/geo?format=clash`)}}' target='_blank'>Clash for Windows </a>
 <a href='${clash_link}' target='_blank'>CLASH </a>
