@@ -720,8 +720,8 @@ ${วเลสSec}
 <button onclick='copyToClipboard("${วเลสSec}")'><i class="fa fa-clipboard"></i> Copy Vless Best IP</button>
 --------------------------`;
 	}).join('\n');
-	const sublink = `https://${hostName}/sub/${userIDArray[0]}?format=clash`
-	const subbestip = `https://${hostName}/bestip/${userIDArray[0]}`;
+	const sublink = `https://${hostName}/sub/geo?format=clash`
+	const subbestip = `https://${hostName}/bestip/geo`;
 	const clash_link = `https://api.v1.mk/sub?target=clash&url=${encodeURIComponent(sublink)}&insert=false&emoji=true&list=false&tfo=false&scv=true&fdn=false&sort=false&new_name=true`;
 	// Prepare header string
 	const header = `
