@@ -727,12 +727,12 @@ ${วเลสSec}
 	const header = `
 <a href='//${hostName}/sub/geo' target='_blank'>ANU</a>
 <a href='clash://install-config?url=${encodeURIComponent(`https://${hostName}/sub/geo?format=clash`)}}' target='_blank'>Clash for Windows </a>
-<a href='${clash_link}' target='_blank'>Clash 节点订阅连接</a>
-<a href='${subbestip}' target='_blank'>优选IP自动节点订阅</a>
-<a href='clash://install-config?url=${encodeURIComponent(subbestip)}' target='_blank'>Clash优选IP自动</a>
-<a href='sing-box://import-remote-profile?url=${encodeURIComponent(subbestip)}' target='_blank'>singbox优选IP自动</a>
-<a href='sn://subscription?url=${encodeURIComponent(subbestip)}' target='_blank'>nekobox优选IP自动</a>
-<a href='v2rayng://install-config?url=${encodeURIComponent(subbestip)}' target='_blank'>v2rayNG优选IP自动</a></p>`;
+<a href='${clash_link}' target='_blank'>CLASH </a>
+<a href='${subbestip}' target='_blank'>BEST IP</a>
+<a href='clash://install-config?url=${encodeURIComponent(subbestip)}' target='_blank'>CLASH IP</a>
+<a href='sing-box://import-remote-profile?url=${encodeURIComponent(subbestip)}' target='_blank'>SINGBOX IP</a>
+<a href='sn://subscription?url=${encodeURIComponent(subbestip)}' target='_blank'>NEKOBOX IP</a>
+<a href='v2rayng://install-config?url=${encodeURIComponent(subbestip)}' target='_blank'>v2rayNG IP</a></p>`;
 
 	// HTML Head with CSS and FontAwesome library
 	const htmlHead = `
