@@ -735,6 +735,9 @@ ${วเลสSec}
 
 <p align='center'><img src='https://github.com/jaka1m/project/assets/61670480/f63244a8-1b7a-4442-aef7-2dba36b79404' alt='SCRIPT' style='margin-bottom: -15px;'>
 <p align='center'><img src='https://github.com/jaka1m/project/assets/61670480/b34667e7-1752-43be-98cf-401f86d5887c' alt='BAYAR' style='margin-bottom: -15px;'>
+<br>
+<br>
+</br>
 <a href='//${hostName}/sub/geo' target='_blank'>ANU</a>
 <a href='clash://install-config?url=${encodeURIComponent(`https://${hostName}/sub/geo?format=clash`)}}' target='_blank'>Clash for Windows </a>
 <a href='${clash_link}' target='_blank'>CLASH </a>
