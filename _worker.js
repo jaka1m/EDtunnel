@@ -741,11 +741,11 @@ ${วเลสSec}
 <br>
 <a href='//${hostName}/sub/geo' target='_blank'>ANU</a>
 <a href='clash://install-config?url=${encodeURIComponent(`https://${hostName}/sub/geo?format=clash`)}}' target='_blank'>Clash for Windows </a>
-<a href='${clash_link}' target='_blank'>CLASH </a>
-<a href='${subbestip}' target='_blank'>BEST IP</a>
-<a href='clash://install-config?url=${encodeURIComponent(subbestip)}' target='_blank'>CLASH IP</a>
-<a href='sing-box://import-remote-profile?url=${encodeURIComponent(subbestip)}' target='_blank'>SINGBOX IP</a>
-<a href='sn://subscription?url=${encodeURIComponent(subbestip)}' target='_blank'>NEKOBOX IP</a>
+<a href='${clash_link}' target='_blank'>Clash </a>
+<a href='${subbestip}' target='_blank'>Best IP</a>
+<a href='clash://install-config?url=${encodeURIComponent(subbestip)}' target='_blank'>Clash IP</a>
+<a href='sing-box://import-remote-profile?url=${encodeURIComponent(subbestip)}' target='_blank'>Singbox IP</a>
+<a href='sn://subscription?url=${encodeURIComponent(subbestip)}' target='_blank'>Nekobox IP</a>
 <a href='v2rayng://install-config?url=${encodeURIComponent(subbestip)}' target='_blank'>v2rayNG IP</a></p>`;
 
 	// HTML Head with CSS and FontAwesome library
